@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My First Webpage</title>
-    </head>
-    <body>
-        <h1>Srilatha Kilaru</h1>
-       
-    </body>
-</html>
-
-<!DOCTYPE html>
-<html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> SRILATHA KILARU </title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <style>
-        .top-left {
+        .header {
             position: absolute;
-            color: white;
+            color: black;
             font-family: Arial;
-            font-size: 30px;
-            top: 30%;
-            left: 30%;
+            left: 25vw;
+            
         }
 
-        .top-right {
+        .navigation {
             position: absolute;
-            color: white;
+            color: black;
             font-family: Arial;
-            font-size: 30px;
-            top: 10%;
-            right: 10%;
+            top: 3vw;
+            right: 3vw;
         }
 
         .container {
             position: relative;
         }
 
-        ul{
+        ul {
             list-style-type: none;
+        }
+
+        @media only screen and (min-width:961px) {
+
+            .header,
+            .navigation {
+                font-size: large;
+            }
+        }
+
+        @media only screen and (min-width:721px) and (max-width:960px) {
+
+            .header,
+            .navigation {
+                font-size: medium;
+            }
+
+            .navigation li {
+                display: inline;
+                padding-right: 20px;
+            }
+
+        }
+
+        @media only screen and (max-width:720px) {
+
+            .header,
+            .navigation {
+                font-size: small;
+            }
+
+            .navigation li {
+                display: inline;
+                padding-right: 20px;
+            }
         }
     </style>
     <script src="https://kit.fontawesome.com/fb2e37a75b.js" crossorigin="anonymous"></script>
@@ -46,23 +73,21 @@
 
 <body>
     <div class="container">
-        <video autoplay loop muted>
-            <source src="background.mp4" type="video/mp4" />
-        </video>
-        <div class="top-left">
+        <div class="header">
             <h1>Srilatha Kilaru</h1>
-            <p>Here's my homepage.</p>
         </div>
-        <div class="top-right">
+        <div class="content">
+
+        </div>
+        <div class="navigation">
             <ul>
                 <li><i class="fas fa-home"></i>&nbsp;Home</li>
                 <li><i class="fas fa-user"></i>&nbsp;&nbsp;About Me</li>
                 <li><i class="fas fa-book"></i>&nbsp;&nbsp;Portfolio</li>
                 <li><i class="fas fa-phone"></i>&nbsp;Contact Me</li>
+                <li><i class="fas fa-file"></i>&nbsp;&nbsp;<a href="resume.pdf">Resume</a></li>
+                <li><i class="fas fa-globe"></i>&nbsp;&nbsp;<a href="Symbols.html">Assignment0</a></li>
             </ul>
-            <p>
-                <a href="Symbols.html">Assignment0</a>
-            </p>
         </div>
     </div>
 </body>
