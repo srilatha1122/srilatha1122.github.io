@@ -14,7 +14,14 @@
             color: black;
             font-family: Arial;
             left: 25vw;
-            
+
+        }
+
+        .container {
+            position: absolute;
+            color: black;
+            font-family: Arial;
+            padding: 5vw 15vw 5vw 3vw;
         }
 
         .navigation {
@@ -25,26 +32,24 @@
             right: 3vw;
         }
 
-        .container {
-            position: relative;
-        }
-
         ul {
             list-style-type: none;
         }
 
-        @media only screen and (min-width:961px) {
+        @media only screen and (min-width:901px) {
 
             .header,
-            .navigation {
+            .navigation 
+            .container{
                 font-size: large;
             }
         }
 
-        @media only screen and (min-width:721px) and (max-width:960px) {
+        @media only screen and (min-width:601px) and (max-width:900px) {
 
             .header,
-            .navigation {
+            .navigation 
+            .container{
                 font-size: medium;
             }
 
@@ -55,10 +60,11 @@
 
         }
 
-        @media only screen and (max-width:720px) {
+        @media only screen and (max-width:600px) {
 
             .header,
-            .navigation {
+            .navigation
+            .container {
                 font-size: small;
             }
 
@@ -72,12 +78,28 @@
 </head>
 
 <body>
+    <div class="header">
+        <h1>Srilatha Kilaru</h1>
+    </div>
     <div class="container">
-        <div class="header">
-            <h1>Srilatha Kilaru</h1>
-        </div>
         <div class="content">
-
+            <p>I am Srilatha Kilaru, first year graduate student in the Department of Computer Science.
+                My under graduation was in Computer Science and Engineering back in India in 2017 with a GPA of 3.10.
+                After graduating, I received a job offer through campus placements and served there for 4 years.
+                Later, I realized the importance of understanding certain key elements to be able to survive in the
+                computer science industry and decided to pursue higher education by entering a master’s program at BSU
+                for Fall 2021.
+                <br>Coming to the United States and surviving here feels challenging and adventurous day by day.
+                Throughout my life in India, I was able to grasp things around me rather quickly and apply them in the
+                daily tasks which created a passion to dig deep into the web development aspects and stand myself as an
+                efficient programmer.
+                Since the United States educational system is widely known for its dynamic nature, I studied the
+                colleges which meets my requirements.
+                I heard about BSU through a friend who recommended to study here. I approached the academic advisor and
+                was really impressed by the way they made me feel about the student culture and benefits through their
+                program.
+                And that’s how I chose to join BSU for higher education.
+            </p>
         </div>
         <div class="navigation">
             <ul>
